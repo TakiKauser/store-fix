@@ -15,7 +15,7 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML = `
       <div class="single-product bg-success">
-        <div class="card h-100">
+        <div class="card">
           <img class="product-image" src=${image}></img>
           <div class="card-body">
             <h3 class="card-title">${product.title}</h3>
@@ -25,8 +25,8 @@ const showProducts = (products) => {
             <h5 class="card-text">Number of Rating:  ${product.rating.count}</h5>
           </div>
           <div class="card-footer">
-            <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn"  class="buy-now btn btn-primary">add to cart</button>
-            <button id="details-btn" class="btn btn-secondary">Details</button>
+            <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">Add to Cart</button>
+            <button id="details-btn" class="btn btn-warning">Details</button>
           </div>
         </div>
       </div>
