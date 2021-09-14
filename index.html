@@ -27,24 +27,17 @@
 
   <body>
     <header></header>
+    <!-- main section starts -->
     <main class="main">
       <!-- search area starts -->
-      <div class="search-field">
-        <div class="search-box">
-          <input id="input-field" class="search-field" type="text" />
-          <button
-            type="button"
-            class="btn btn-secondary search-button"
-            data-toggle="button"
-            aria-pressed="true"
-            autocomplete="off"
-            id="search-btn"
-            onclick="loadProducts()"
-          >
-            Search
-          </button>
+      <section class="search-area">
+        <div class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="loadProducts()">Search</button>
         </div>
-      </div>
+        </section>
       <!-- products display area starts -->
       <div class="row">
         <div class="col-md-9 col-lg-9 col-sm-7">
